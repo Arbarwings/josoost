@@ -7,7 +7,6 @@ on:
 
 jobs:
   create-release:
-    needs: [get-version, prepare-release]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
